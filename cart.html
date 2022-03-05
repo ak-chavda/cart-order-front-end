@@ -131,11 +131,11 @@
   <section class="cart_area section_padding">
     <div class="container" ng-app="CartApp" ng-controller="cartController">
       <div class="cart_inner">
-		<div>
-			<button ng-click="refreshCart()" class="btn btn-success" style="float:right">Refresh Cart</button>
-		</div>
+        <div>
+          <button ng-click="refreshCart()" class="btn btn-success" style="float:right">Refresh Cart</button>
+        </div>
         <div class="table-responsive">
-			<table class="table">
+          <table class="table">
             <thead>
               <tr>
                 <th scope="col">Product</th>
@@ -163,15 +163,16 @@
                   </td>
                   <td>
                     <div class="product_count">
-                      <input id="qty{{item.itemid}}" ng-click="changeQty(item)" type="number" value="{{item.qty}}" min="1" max="10" />
+                      <input id="qty{{item.itemid}}" ng-click="changeQty(item)" type="number" value="{{item.qty}}"
+                        min="1" max="10" />
                     </div>
-                  </td>	
+                  </td>
 
                   <td>
                     <h5>{{item.qty * item.price}}</h5>
                   </td>
-				  
-				  <td>
+
+                  <td>
                     <button ng-click="removeItem(item.itemid)" class="btn btn-danger">remove</button>
                   </td>
                 </tr>
@@ -197,13 +198,13 @@
           </table>
           <div class="checkout_btn_inner float-right">
             <a ng-if="!isCartEmpty" class="btn_1 checkout_btn_1" href="payment.html">Proceed to checkout</a>
-			<br/>
-            <a class="btn_1" href="product_list.html">Continue Shopping</a> 
+            <br />
+            <a class="btn_1" href="product_list.html">Continue Shopping</a>
           </div>
         </div>
-		</div>
       </div>
-	</div>
+    </div>
+    </div>
   </section>
   <!--================End Cart Area =================-->
   <!--::footer_part start::-->
@@ -290,9 +291,9 @@
 
 </body>
 
-  <script src="./cartmodule.js"></script>
+<script src="./cartmodule.js"></script>
 <script>
- 
+
 </script>
 
 </html>

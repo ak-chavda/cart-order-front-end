@@ -4,7 +4,7 @@ cartApp.controller('orderController', function ($scope, $http) {
 
 	$scope.errorMsg = null;
 	$scope.Userid = 'user1';
-	$scope.API_URL = 'http://localhost:8080/api/order/';
+	$scope.API_URL = 'http://localhost:8888/api/order/';
 	$scope.jwttoken = "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyMSIsImV4cCI6MTU4NDYyNzU5MSwiaWF0IjoxNTg0NTkxNTkxfQ.FzqiqIo-3Jmn24VBsHeWtazRC3Shd3jj-90_M-q88ls";
 
 	$http.defaults.headers.common['Authorization'] = $scope.jwttoken;
